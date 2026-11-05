@@ -1,0 +1,20 @@
+{
+  "name": "mysql-to-bigquery-schema",
+  "version": "0.1.0",
+  "description": "Convert MySQL CREATE TABLE statements (SHOW CREATE TABLE, mysqldump) to BigQuery DDL and JSON schemas, with the correct type mapping.",
+  "type": "module",
+  "bin": { "mysql2bq": "dist/cli.js" },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test test/*.test.ts",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": ["mysql", "bigquery", "schema", "ddl", "converter", "cdc", "migration", "data-engineering"],
+  "homepage": "https://quayen.com/tools/mysql-to-bigquery-schema-converter",
+  "license": "MIT",
+  "engines": { "node": ">=22.6" },
+  "devDependencies": { "@types/node": "^22.10.0", "typescript": "^5.6.3" }
+}
