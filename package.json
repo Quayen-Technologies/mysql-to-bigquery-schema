@@ -15,6 +15,9 @@
   "keywords": ["mysql", "bigquery", "schema", "ddl", "converter", "cdc", "migration", "data-engineering"],
   "homepage": "https://quayen.com/tools/mysql-to-bigquery-schema-converter",
   "license": "MIT",
+  "author": "Quayen <support@quayen.com> (https://quayen.com)",
+  "repository": { "type": "git", "url": "git+https://github.com/Quayen-Technologies/mysql-to-bigquery-schema.git" },
+  "bugs": { "url": "https://github.com/Quayen-Technologies/mysql-to-bigquery-schema/issues" },
   "engines": { "node": ">=22.6" },
   "devDependencies": { "@types/node": "^22.10.0", "typescript": "^5.6.3" }
 }
